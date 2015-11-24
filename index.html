@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My Online Resume / Portfolio">
+    <meta name="author" content="Derrick Moss">
+    <title>Derrick Moss - DArtiste Studios</title>
+
+    <!-- Fonts: Roboto Styles from Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,300italic,300' rel='stylesheet' type='text/css'>
+    <!-- convert to .min version per Udacity -->
+    <link href="css/dmossRes.css" rel="stylesheet">
+    <!--<link href="css/dmossRes.min.css" rel="stylesheet">-->
+
+    <!-- jQuery standard with class original helper -->
+    <script src="js/jQuery.js"></script>
+    <!-- helper provides data for online resume -->
+    <!-- convert to .min version per Udacity -->
+    <script src="js/helper.js"></script>
+    <!--<script src="js/helper.min.js"></script>-->
+
+    <!-- Google Map per class notes added to the resume! -->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+</head>
+
+<body>
+    <!-- Begin main section -->
+    <div id="main">
+        <!-- Begin resume page layout -->
+        <div id="header" class="center-content clear-fix">
+            <ul id="topContacts" class="flex-box">
+            </ul>
+        </div>
+        <div style="clear: both;"></div>
+        <div id="workExperience">
+            <h3>Work Experience</h3>
+        </div>
+        <div id="projects">
+            <h3>Projects</h3>
+        </div>
+        <div id="education">
+            <h3>Education</h3>
+        </div>
+        <div id="mapDiv">
+            <h3>Where I've Lived and Worked</h3>
+        </div>
+        <div id="lets-connect">
+            <h3 class="center-text dartisteBlue-background white-text">Let's Connect</h3>
+            <ul id="footerContacts" class="flex-box">
+            </ul>
+        </div>
+    </div>
+
+    <!-- JavaScript written to build resume dynamically and from data -->
+    <script src="js/resumeBuilder.js"></script>
+
+    <!-- Testing project JS -->
+    <script type="text/javascript">
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('topContacts').style.display = 'none';
+        }
+        if (document.getElementsByTagName('h1').length === 0) {
+            document.getElementById('header').style.display = 'none';
+        }
+        if (document.getElementsByClassName('work-entry').length === 0) {
+            document.getElementById('workExperience').style.display = 'none';
+        }
+        if (document.getElementsByClassName('project-entry').length === 0) {
+            document.getElementById('projects').style.display = 'none';
+        }
+        if (document.getElementsByClassName('education-entry').length === 0) {
+            document.getElementById('education').style.display = 'none';
+        }
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('lets-connect').style.display = 'none';
+        }
+        if (document.getElementById('map') === null) {
+            document.getElementById('mapDiv').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

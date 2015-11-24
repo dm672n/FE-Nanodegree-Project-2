@@ -1,0 +1,379 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Expanding upon the orignal css */
+body, div, ul, li, p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Tahoma, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    background: url(../imgs/bgSplice.png) repeat-x 0 0;
+}
+
+h2, h4, h5 {
+    color: #999;
+}
+
+h3, h4 {
+    font-weight: bold;
+    font-size: 1.15em;
+    line-height: 1.5em;
+}
+
+h3, h4, h5 {
+    padding: 10px 5%;
+}
+
+h4, h5 {
+    font-weight: bold;
+}
+
+h1 {
+    color: #0e5ca7;
+    font-size: 3em;
+    font-weight: 300;
+    text-align: right;
+    padding-top: 1%;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: 300;
+    text-align: right;
+    padding: 0;
+}
+
+h4 {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px dotted #999;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+h5 {
+    font-size: 1em;
+    font-style: italic;
+}
+
+p {
+    font-size: 14px;
+    color: #333;
+    line-height: 21px;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    padding: 10px 0;
+}
+
+span {
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active, a:hover {
+    text-decoration: underline;
+}
+
+/* Page Elements */
+.clear-fix {
+    overflow: auto;
+}
+
+#main {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: url(../imgs/bgSplice.png) repeat-x 0 0;
+}
+
+#header {
+    background-color: #fff;
+}
+
+#nameDescription {
+    height: 120px;
+    border-bottom: 2px solid #999;
+}
+
+.biopic {
+    width: 120px;
+    height: 120px;
+    display: block;
+    float: left;
+    padding: 0;
+}
+
+#topContacts, #footerContacts {
+    font-size: 0.85em;
+    background-color: #ececec;
+}
+
+.flex-box {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.center-content {
+    padding: 2.5% 5%;
+}
+
+#summary {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.welcome-message {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.welcome-message > #skills-h3 {
+    padding-left: 0;
+}
+
+.welcome-message > p {
+    color: #777;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+p.stand-out {
+    margin-top: 1%;
+    font-size: 0.9em;
+}
+
+.education-entry, .work-entry, .project-entry {
+    margin-top: 1%;
+    padding: 0 5%;
+}
+
+.entry-data {
+    clear: both;
+}
+
+.name-text, .title-text {
+    float: left;
+}
+
+.location-text, .title-text, .date-text {
+    font-size: 0.85em;
+}
+
+.location-text, .date-text {
+    color: #999;
+    line-height: 1.1em;
+}
+
+.name-text {
+    line-height: 1.5em;
+}
+
+.location-text {
+    display: inline-block;
+}
+
+.date-text {
+    float: right;
+    font-style: italic;
+}
+
+.description, .description + ul {
+    color: #777;
+}
+
+.description {
+    clear: both;
+    margin: 3% auto 2%;
+}
+
+.description + ul {
+    margin-top: -2%;
+    list-style: disc outside none;
+    font-size: 14px;
+    padding-left: 17px;
+}
+
+.project-entry > img {
+    max-width: 100%;
+}
+
+.project-entry .date-text {
+    padding-top: 6.4px;
+}
+
+#mapDiv {
+    height: 400px;
+    padding-bottom: 5%;
+}
+
+#mapDiv > h3 {
+    border-bottom: 0;
+}
+
+#map {
+    display: block;
+    height: 100%;
+    margin: 0 5%;
+}
+
+#lets-connect {
+    width: 90%;
+    margin: auto;
+    margin-top: 1%;
+    text-align: center;
+}
+
+#lets-connect > h3 {
+    border-bottom: 2px solid #999;
+}
+
+/* Colors */
+.white-text, .white-text a {
+    color: #fff;
+}
+
+.gray-text, .gray-text a {
+    color: #999;
+}
+
+.gray-text a:active, .gray-text a:hover {
+    border-bottom: 1px solid black;
+    text-decoration: none;
+}
+
+.dartisteBlue-background {
+    background: #0e5ca7;
+}
+
+.dartisteBlue-text, .dartisteBlue-text a {
+    color: #0e5ca7;
+}
+
+.stand-out .dartisteBlue-text {
+    font-weight: bold;
+}
+
+.dartisteBlue-text a:active, .dartisteBlue-text a:hover {
+    border-bottom: 1px dotted #999;
+    text-decoration: none;
+}
+
+/* Media Queries (to handle various device widths) */
+/* maximum width: 1024px */
+@media only screen and (max-width: 1024px) {
+    #lets-connect {
+        margin-top: 2%;
+        transition: margin-top 1.0s;
+    };
+}
+
+/* maximum width: 768px (tablets) */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.75em;
+    }
+/* omit non-critical contact info on smaller devices */
+    #topContacts > .flex-item:last-of-type,  #footerContacts > .flex-item:last-of-type {
+        display: none;
+        transition: display 1.0s;
+    }
+
+    #skills-h3 {
+        padding-left: 0;
+    }
+
+    .welcome-message {
+        width: 100%;
+        display: block;
+        transition: all 1.0s;
+    }
+
+    #lets-connect {
+        margin-top: 4%;
+        transition: margin-top 1.0s;
+    };
+}
+
+/* maximum width: 568px (small devices) */
+@media only screen and (max-width: 568px) {
+    body {
+        font-size: 15px;
+    }
+
+    h1,  h2 {
+        width: 100%;
+        text-align: center;
+        transition: width 1.0s;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        margin-bottom: 2%;
+        font-size: 0.75em;
+        font-weight: 700;
+        transition: margin-bottom 1.0s;
+    }
+
+    #nameDescription {
+        height: auto;
+        transition: height 1.0s;
+    }
+
+    .biopic {
+        margin: 0 auto;
+        float: none;
+        transition: margin 1.0s;
+    }
+
+    #topContacts > .flex-item:nth-last-of-type(2),  #footerContacts > .flex-item:nth-last-of-type(2) {
+        display: none;
+        transition: display 1.0s;
+    }
+
+    .project-entry .date-text {
+        padding-top: 6px;
+    }
+
+    #lets-connect {
+        margin-top: 6%;
+        transition: margin-top 1.0s;
+    };
+}
+
+/* maximum width: 420px (phones) */
+@media only screen and (max-width: 420px) {
+    #topContacts,  #footerContacts {
+        font-size: 0.8em;
+    }
+
+    #lets-connect {
+        margin-top: 10%;
+        transition: margin-top 1.0s;
+    };
+}
+
+/* maximum width: 360px (phones) */
+@media only screen and (max-width: 360px) {
+    .flex-box {
+        padding: 5px;
+        transition: padding 1.0s;
+    };
+}

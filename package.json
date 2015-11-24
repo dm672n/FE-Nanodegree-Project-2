@@ -1,0 +1,20 @@
+{  
+   "name":"FE-Nanodegree-Project-2",
+   "version":"0.1.4",
+   "description":"Udacity Front-End Web Developer Nanodegree Project 2: Online Resume",
+   "main":"index.html",
+   "repository":{  
+      "type":"git",
+      "url":"git+https://github.com/dm672n/FE-Nanodegree-Project-2"
+   },
+   "keywords":[  
+      "Front-End Web Developer",
+      "Nanodegree Project 2",
+      "Online Resume",
+      "Derrick Moss",
+      "Multimedia Designer/Developer"
+   ],
+   "author":"Derrick Moss",
+   "license":"MIT",
+   "homepage":"https://github.com/dm672n/FE-Nanodegree-Project-2#README"
+}
